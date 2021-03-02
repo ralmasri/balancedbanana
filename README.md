@@ -1,4 +1,18 @@
 [![Build Status](https://travis-ci.org/balancedbanana/balancedbanana.svg?branch=master)](https://travis-ci.org/balancedbanana/balancedbanana)[![Coverage Status](https://coveralls.io/repos/github/balancedbanana/balancedbanana/badge.svg?branch=master)](https://coveralls.io/github/balancedbanana/balancedbanana?branch=master)
+# Einleitung
+Die Verteilung rechenintensiver Aufgaben ist ein in vielen Unternehmen übliches Problem. Wenn ein Team größer wird, so werden auch die verfügbaren Rechenressourcen und
+die darauf ausgeführten Aufgaben größer und komplexer.
+
+Es wird immer schwieriger, die vorhandenen Ressourcen effizient und gerecht an die verschiedenen Mitarbeiter und Aufgaben zu verteilen. Aktuell stehen individuelle Arbeiter zur Verfügung, die von jedem Mitarbeiter beliebig verwendet werden können. So können Aufgaben nur bearbeitet werden, wenn zum Zeitpunkt der Anfrage ein Arbeiter frei steht. Doch das ist weder fair einem einzelnen Benutzer gegenüber, noch kann die Hardware dadurch gut ausgelastet werden. Wird eine Aufgabe beispielsweise mitten in der Nacht abgeschlossen, ist niemand da, um eine neue Aufgaben ausführen zu lassen. 
+
+Es gibt auf dem Markt bereits viele Lösungen für dieses Problem, allerdings sind sie
+sehr komplex und nicht leicht erweiterbar. Balanced Banana löst dieses Problem maßgeschneidert an die Bedürfnisse des CES. 
+
+Mit Balanced Banana soll der Benutzer seine Aufgabe unkompliziert von der Befehlszeile abschicken können, sodass diese automatisch auf einen bereitstehenden Arbeiter verteilt wird. Die Aufgaben sind in Docker-Containern von anderen Aufgaben abgetrennt. 
+
+Darüber hinaus soll der Benutzer durch zusätzliche Parameter in der Lage sein, weitere Einschränkungen und/oder Bedingungen für seine Aufgaben anzugeben. 
+
+Balanced Banana soll in der Lage sein, die anstehenden Aufgaben effizient auf die verfügbaren Arbeiter zu verteilen. Hierbei werden Größe, Priorität und gegebenen Einschränkungen berücksichtigt. Um möglichst flexibel einsetzbar zu sein, soll außerdem die Verteilerlogik über eine feste Schnittstelle jederzeit änderbar sein, sodass Aspekten wie Fairness unterschiedliche Relevanz eingeräumt werden kann.
 
 # Dev Setup
 ## Ubuntu 18.04
